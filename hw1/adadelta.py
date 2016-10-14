@@ -119,7 +119,6 @@ def training(itnum):
                 ada_da, ada_ga, ada_dc, ada_gc,
                 ada_dw, ada_gw, ada_db, ada_gb,
                 0.95, 1e-8, 0)
-        print(t)
         if t == itnum:
             predict = do_predict(a, c, w, b)
             with open('linear_regression.csv', 'w') as csvfile:
