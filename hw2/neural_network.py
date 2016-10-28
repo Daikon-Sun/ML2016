@@ -357,7 +357,7 @@ for i in range(700):
     x = random.randint(0, 4001-i-1)
     valid_data.append(train_data.pop(x))
 
-iter_num = 100#000
+iter_num = 500#000
 lmbd = 0.001
 shapes = [57, 2]
 btch_cnt = 10
