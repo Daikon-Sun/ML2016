@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import Isomap, MDS, TSNE
 from sklearn.semi_supervised import LabelPropagation
 from keras import backend as K
+K.set_image_dim_ordering('th')
 from keras.models import Sequential, Model, load_model
 from keras.layers import Input, Dense, Activation, merge
 from keras.optimizers import SGD
