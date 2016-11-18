@@ -2,6 +2,8 @@ import pickle
 import numpy as np
 import sys
 import csv
+from keras import backend as K
+K.set_image_dim_ordering('th')
 from keras.models import load_model
 
 all_test = pickle.load(open(sys.argv[1]+'test.p', 'rb'))
