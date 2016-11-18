@@ -4,6 +4,7 @@ import csv
 import sys
 import matplotlib.pyplot as plt
 from keras import backend as K
+K.set_image_dim_ordering('th')
 from keras.models import Sequential, Model
 from keras.layers import Input, Dense, Activation
 from keras.optimizers import SGD
