@@ -47,7 +47,7 @@ X = cosine_similarity(X)
 print('done')
 
 predict = []
-with open('data/check_index.csv', 'r') as csvfile:
+with open(sys.argv[1]+'check_index.csv', 'r') as csvfile:
     csvf = csv.reader(csvfile)
     next(csvf)
     for row in csvf:
